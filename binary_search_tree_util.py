@@ -5,6 +5,7 @@ class Node:
         self.left = None
         self.right = None
 
+
 class BinarySearchTree:
 
     def __init__(self):
@@ -32,21 +33,20 @@ class BinarySearchTree:
         for item in arr:
             self.insert(item)
 
-    def preorder_traversal(self, node): # (NLR)
+    def preorder_traversal(self, node):  # (NLR)
         if node:
-            print(node.data, end= '->')
+            print(node.data, end='->')
             self.preorder_traversal(node.left)
             self.preorder_traversal(node.right)
 
-    def inorder_traversal(self, node): # (LNR)
+    def inorder_traversal(self, node):  # (LNR)
         if node:
             self.inorder_traversal(node.left)
             print(node.data, end='->')
             self.inorder_traversal(node.right)
 
-    def postorder_traversal(self, node): # (LRN)
+    def postorder_traversal(self, node):  # (LRN)
         if node:
             self.postorder_traversal(node.left)
             self.postorder_traversal(node.right)
             print(node.data, end='->')
-

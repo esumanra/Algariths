@@ -5,5 +5,6 @@ import subprocess
 # dlg = Desktop(backend='uia').inetcpl
 # dlg.wait('visible')
 from pywinauto import application
+
 app = application.Application()
 app.start("inetcpl.cpl")

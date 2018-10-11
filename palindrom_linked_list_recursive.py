@@ -3,6 +3,7 @@ import linked_list_util as l
 s = "radar"
 h = l.create_list(s[::-1])
 
+
 def is_palindrome_util(right, left):
     if right is None:
         return True
@@ -18,11 +19,13 @@ def is_palindrome_util(right, left):
 
     return y
 
+
 def is_palindrome(head_node):
     if is_palindrome_util(head_node, head_node):
         print("Palindrome")
     else:
         print("Nope")
+
 
 def recursive_print(head):
     cur = head

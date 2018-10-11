@@ -4,11 +4,11 @@ class Node:
         self.data = data
         self.nextNode = None
 
+
 class Linked_List:
 
     def __init__(self):
         self.head = None
-
 
     def insert(self, data):
 

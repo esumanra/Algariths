@@ -1,5 +1,6 @@
 from linked_list_util import Node, create_list, traverse
 
+
 def remove_duplicates_unsorted_l_list(head):
     prev = None
     unique = set()
@@ -10,6 +11,7 @@ def remove_duplicates_unsorted_l_list(head):
             unique.add(head.data)
             prev = head
         head = head.nextNode
+
 
 # another implementation
 def remove_dup(h):
@@ -27,6 +29,7 @@ def remove_dup(h):
 
         cur = cur.nextNode
     return cur
+
 
 s_list = "aabbbcdde"
 h = create_list(s_list[::-1])

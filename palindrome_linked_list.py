@@ -4,8 +4,8 @@ class Node:
         self.data = data
         self.next = None
 
-def make_linked_list(st):
 
+def make_linked_list(st):
     head = None
     for item in st:
         newNode = Node(item)
@@ -17,6 +17,7 @@ def make_linked_list(st):
             head = newNode
     return head
 
+
 def compare_two_lists(first, second):
     while second is not None:
         if first.data != second.data:
@@ -26,11 +27,13 @@ def compare_two_lists(first, second):
         second = second.next
     return True
 
+
 def traverse(head):
     currNode = head
     while currNode is not None:
         print(currNode.data),
         currNode = currNode.next
+
 
 def reverseList(head):
     prev = next_node = None
@@ -42,7 +45,8 @@ def reverseList(head):
         prev = current
         current = next_node
 
-    return prev # coz prev will be new head - end of list
+    return prev  # coz prev will be new head - end of list
+
 
 def is_linked_list_palindrome(head):
     fast = slow = head
@@ -70,8 +74,9 @@ def is_linked_list_palindrome(head):
     else:
         print("Not a palindrome linked list")
 
-    #reverse the second list
+    # reverse the second list
     reverseList(second_head)
+
 
 s = "mani"
 head = make_linked_list(s)

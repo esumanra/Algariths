@@ -6,6 +6,7 @@ import random
 import re
 import sys
 
+
 # Complete the makeAnagram function below.
 def makeAnagram(a, b):
     need_removal_from_first_string = 0
@@ -23,6 +24,7 @@ def makeAnagram(a, b):
 
     print(last_occ_ele_index)
     return total_removal_count
+
 
 a = "cdecc"
 

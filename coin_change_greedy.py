@@ -12,4 +12,4 @@ def no_of_coins(value):
     return coins
 
 
-print no_of_coins(inp)
+print(no_of_coins(inp))
